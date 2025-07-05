@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BisaBantu - Platform Pemesanan Jasa Bantu Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #00B4DB 0%, #0083B0 100%);
+        }
+        .btn-primary {
+            background-color: #0083B0;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #00688B;
+        }
+        .nav-link:hover {
+            color: #0083B0;
+            border-bottom: 2px solid #0083B0;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body id="top" class="font-sans bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="foto/logos.png" alt="Santosuruh Logo dengan ikon orang membersihkan dalam lingkaran biru" class="h-10 w-10">
+                <span class="text-xl font-bold text-[#0083B0]">BisaBantu</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#top" class="nav-link font-medium text-gray-700 py-2">Beranda</a>
+                <a href="#layanan" class="nav-link font-medium text-gray-700 py-2">Layanan</a>
+                <a href="#Siap" class="nav-link font-medium text-gray-700 py-2">Tentang Kami</a>
+                <!--<a href="#" class="nav-link font-medium text-gray-700 py-2">Kontak</a>-->
+            </div>
+            
+            <div class="flex items-center space-x-4">
+            <!--    <a href="#" class="font-medium text-gray-700">Masuk</a> -->
+                <a href="https://wa.me/6289523987338?text=Halo%20Saya%20ingin%20memesan%20layanan%20 [ISI_LAYANAN_DISINI]" class="btn-primary px-4 py-2 rounded-md font-medium">Pesan Sekarang</a>
+            </div>
+            
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="container mx-auto px-6 py-10 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Jasa Bantu Apa Saja dengan Mudah</h1>
+                <p class="text-xl mb-8">Kami Mempermudah pekerjaan yang sedang tidak bisa dilakukan.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://wa.me/6289523987338?text=Halo%20Saya%20ingin%20memesan%20layanan%20 [ISI_LAYANAN_DISINI]" class="bg-white text-[#0083B0] px-6 py-3 rounded-md font-bold text-center">Pesan Sekarang</a>
+                    <a href="/Lihat-semua-layanan.html" class="border-2 border-white px-6 py-3 rounded-md font-bold text-center">Lihat Semua Layanan</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="foto/logost.png" alt="Wanita profesional sedang membersihkan rumah dengan senyum bahagia" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Logos 
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center text-gray-500 mb-8">DI PERCAYA OLEH</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://placehold.co/120x60" alt="Logo Mitra Perusahaan properti" class="h-8 md:h-12">
+                <img src="https://placehold.co/120x60" alt="Logo Mitra Bank ternama" class="h-8 md:h-12">
+                <img src="https://placehold.co/120x60" alt="Logo Mitra Startup teknologi" class="h-8 md:h-12">
+                <img src="https://placehold.co/120x60" alt="Logo Mitra Universitas" class="h-8 md:h-12">
+                <img src="https://placehold.co/120x60" alt="Logo Mitra Pemerintah" class="h-8 md:h-12">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Services Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 id="layanan" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Layanan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Berbagai jenis layanan Bisa kami Bantu</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="foto/bersihbersih.jpeg" alt="Petugas sedang mengepel lantai rumah modern" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Bersih Harian</h3>
+                        <p class="text-gray-600 mb-4">Membersihkan seluruh bagian rumah termasuk mengepel, menyapu, dan membersihkan debu.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-[#0083B0]">Mulai dari Rp 50.000</span>
+                            <!-- <button class="btn-primary px-4 py-2 rounded-md text-sm">Detail</button> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="foto/Belikan.jpeg" alt="Petugas sedang membersihkan jendela gedung tinggi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Belikan Barang</h3>
+                        <p class="text-gray-600 mb-4">Membelikan Barang yang tidak bisa di beli karena sedang tidak dilokasi atau sedang ada pekerjaan lain.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-[#0083B0]">Mulai dari Rp 40.000</span>
+                            <!-- <button class="btn-primary px-4 py-2 rounded-md text-sm">Detail</button> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="foto/kuburkucing.jpeg" alt="Petugas sedang menyedot debu dengan alat vacuum profesional" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Buang/Kubur Bangkai</h3>
+                        <p class="text-gray-600 mb-4">Membuang ataupun Mengubur Bangkai Tikus, Kucing dan Hewan lain.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-[#0083B0]">Mulai dari Rp 50.000</span>
+                            <!-- <button class="btn-primary px-4 py-2 rounded-md text-sm">Detail</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="/Lihat-semua-layanan.html" class="inline-block btn-primary px-6 py-3 rounded-md font-medium">Lihat Semua Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Cara Memesan</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hanya perlu 4 langkah mudah untuk mendapatkan layanan kebersihan profesional</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto bg-[#0083B0] rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Pilih Layanan</h3>
+                    <p class="text-gray-600">Pilih jenis layanan kebersihan yang Anda butuhkan</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto bg-[#0083B0] rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Isi Detail di WhatsApp</h3>
+                    <p class="text-gray-600">Isi tanggal, waktu, dan detail alamat Pada WhatsApp</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto bg-[#0083B0] rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Negosiasi dan Pembayaran</h3>
+                    <p class="text-gray-600">Lakukan Negosiasi dan pembayaran secara online</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto bg-[#0083B0] rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4">4</div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Petugas Datang</h3>
+                    <p class="text-gray-600">Petugas profesional akan datang sesuai jadwal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials 
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Apa Kata Pelanggan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Testimonial dari ribuan pelanggan yang puas dengan layanan kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Foto profil wanita muda tersenyum" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sarah Jessica</h4>
+                            <p class="text-gray-600 text-sm">Jakarta Selatan</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-700">"Petugasnya sangat profesional dan teliti. Rumah saya benar-benar bersih setelah menggunakan layanan ini."</p>
+                </div>
+                
+                <!-- Testimonial 2 
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Foto profil pria dewasa memakai kacamata" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Budi Santoso</h4>
+                            <p class="text-gray-600 text-sm">Bandung</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-700">"Sangat praktis dan efisien. Aplikasinya mudah digunakan dan petugas datang tepat waktu."</p>
+                </div>
+                
+                <!-- Testimonial 3 
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Foto profil wanita paruh baya tersenyum" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Dewi Lestari</h4>
+                            <p class="text-gray-600 text-sm">Depok</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-700">"Sudah langganan 2 tahun. Selalu puas dengan hasil pembersihannya. Sangat direkomendasikan!"</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- CTA Section -->
+    <section class="py-20 bg-[#0083B0] text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 id="Siap" class="text-3xl md:text-4xl font-bold mb-6">Siap Membantu Menyelesaikan Tugas anda dengan Mudah</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Pesan Sekarang untuk mendapatkan Jasa BisaBantu.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="/Lihat-semua-layanan.html" class="bg-white text-[#0083B0] px-6 py-3 rounded-md font-bold">Mulai Pemesanan</a>
+                <a href="#" class="border-2 border-white px-6 py-3 rounded-md font-bold">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="https://placehold.co/40x40" alt="Santosuruh Logo dengan ikon orang membersihkan dalam lingkaran biru" class="h-10 w-10">
+                        <span class="text-xl font-bold">BisaBantu</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Platform pemesanan jasa Bantu, mempermudah pekerjaan yang sedang tidak bisa dilakukan.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/bisabantu2025/"><img src="foto/instagram.jpeg" alt="Icon Instagram"></a>
+                        <a href="#"><img src="foto/facebook.png" alt="Icon Facebook"></a>
+                        <!--<a href="#"><img src="https://placehold.co/30x30" alt="Icon Twitter"></a>-->
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Perusahaan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Tentang Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Karir</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Partner</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Bersih Halaman</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Buang/Kubur Bangkai</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Belikan Barang</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Hubungi Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Jl. Letnan Kasnariansyah Lorong Makmur, Palembang</li>
+                        <li class="text-gray-400">bisabantu2025@gmail.com</li>
+                        <li class="text-gray-400">+62 895 2398 7338</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 BisaBantu. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover:text-white">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/6289523987338?text=Halo%20Saya%20ingin%20memesan%20layanan%20 [ISI_LAYANAN_DISINI] " class="bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('header button').addEventListener('click', function() {
+            document.querySelector('nav div:nth-child(2)').classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Page scroll animation
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const elements = document.querySelectorAll('.service-card, .testimonial-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.offsetTop;
+                const elementHeight = element.offsetHeight;
+                
+                if (scrollPosition > elementPosition - window.innerHeight + elementHeight / 2) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        
+        // Initialize animation styles
+        document.querySelectorAll('.service-card, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.5s ease-out';
+        });
+        
+        // Trigger initial check in case elements are already in view
+        window.dispatchEvent(new Event('scroll'));
+    </script>
+</body>
+</html>
